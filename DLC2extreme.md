@@ -25,9 +25,11 @@ grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b" /home/hidden_d
 [root@localhost ~]# grep -l "IMPORTANT" /home/hidden_data/* | xargs grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" > ip_addresses.txt
 ```
 ```powershell
+marche pas mais je mets quand même pour vérification
 grep -h "base64" /home/hidden_data/* | base64 --decode > decoded_data.txt
 ```
 ```powershell
+idem
 grep -ril "SECRET" /home/hidden_data/ > secret_files.txt
 ```
 
